@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--landing page-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="menu-item"><a href="#header">Home</a></li>
+                    <li class="menu-item"><a href="#about">About</a></li>
+                    <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi, I'm <span>Aleksander Alderete</span><br>from Southern California and<br>attending CSU Long Beach</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--about section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="selfie" src="images/selfie.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="bio">
+                        My name is Aleksander Alderete. I was born in Harbor City, CA, and eventually moved
+                        to the Palos Verdes region. I went to school in this area throughout my life, and
+                        then moved to Riverside so I could learn Economics at the University of California, Riverside.
+                        After, I worked various jobs in different industries where I picked up skills on real-life
+                        work, such as being attentive and working in a group. Currently, I have returned to school for
+                        a second Bachelors' degree in Computer Science at California State University, Long Beach. Some
+                        of my most enjoyed topics and coursework have been Mathematics and Software Engineering.
+                        These were tough subjects coming from a Humanities background, but I have enjoyed the challenged
+                        and have been successful so far, earning A's in my courses. My hope for the future is to become a
+                        software engineer at one of the many technology companies in the United States and abroad.
+                    </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li class="drop-down"><span>2021-Current, City of Torrance</span><br>Minutes Secretary</li>
+                        <li class="drop-down"><span>2018-2022, PVPUSD</span><br>Substitute Teacher</li>
+                        <li class="drop-down"><span>2017-2018, Electronic Inventory Online, Inc.</span><br>Data Entry</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li class="drop-down"><span>Languages</span><br>C++, JavaScript, Python, Kotlin</li>
+                        <li class="drop-down"><span>Paradigms</span><br>OOP</li>
+                        <li class="drop-down"><span>Other</span><br>Git, Github</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li class="drop-down"><span>2014-2017, UC Riverside</span><br>Business Economics</li>
+                        <li class="drop-down"><span>2023-2025, CSU Long Beach</span><br>Computer Science</li>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--portolio section-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Some Small Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/library.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Library</h3>
+                        <p>Simple Library on a web browser</p>
+                        <a href="https://github.com/Eli8375/library" class="github" id="etchasketch" target="_blank" rel="noopener noreferrer"><img src="images/open_in_new_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tic-tac-toe.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>Simple game of Tic-Tac-Toe on a web browser</p>
+                        <a href="https://github.com/Eli8375/tic-tac-toe" class="github" id="tic-tac-toe" target="_blank" rel="noopener noreferrer"><img src="images/open_in_new_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calculator.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Simple Calculator on a web browser</p>
+                        <a href="https://github.com/Eli8375/calculator" class="github" id="calculator" target="_blank" rel="noopener noreferrer"><img src="images/open_in_new_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="images/send_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">alekajobs@gmail.com</p>
+                    <p><img src="images/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">310-600-1918</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Eli8375" target="_blank" rel="noopener noreferrer"><img src="images/github-mark-white.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/aleksander-alderete-ba244730b" target="_blank" rel="noopener noreferrer"><img src="images/LI-In-Bug.png" alt=""></a>
+                    </div>
+                    <form method="get" action="files/Resume_2024_Official.pdf">
+                        <button type="submit" id="resume">Download Resume</button>
+                     </form>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
